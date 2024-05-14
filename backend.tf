@@ -2,8 +2,8 @@
 
 terraform {
   backend "s3" {
-    bucket  = "terraform-backends"
-    key     = "infra-terraform-aws-github-oidc/states/terraform.tfstate"
+    bucket  = "infra-terraform-aws-github-oidc"
+    key     = "terraform.tfstate"
     region  = "eu-west-1"
     encrypt = true
   }
